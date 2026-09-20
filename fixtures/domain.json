@@ -1,0 +1,32 @@
+{
+  "domain": "emerging-creator-growth",
+  "version": 1,
+  "sample_id": "092201-004",
+  "record_types": [
+    "作者档案",
+    "作品信号",
+    "统计窗口",
+    "候选结论",
+    "复核意见",
+    "扶持动作"
+  ],
+  "workflow_states": [
+    "观察中",
+    "候选",
+    "待复核",
+    "已入选",
+    "申诉中",
+    "已结束"
+  ],
+  "facts": [
+    "年轻新作者成长速度显著高于同类创作者",
+    "主动推荐可以反映用户认可",
+    "平台会针对不同阶段作者提供成长扶持"
+  ],
+  "sample": {
+    "creator": "科研作者样例",
+    "active_days": 176,
+    "recommendation_index": 3.4,
+    "content_domain": "天文科普"
+  }
+}
