@@ -8,6 +8,8 @@
     "sample_id",
     "record_types",
     "workflow_states",
+    "window_signals",
+    "policies",
     "facts",
     "sample"
   ],
@@ -36,6 +38,51 @@
       "items": {
         "type": "string"
       }
+    },
+    "window_signals": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "string"
+      }
+    },
+    "policies": {
+      "type": "object",
+      "required": [
+        "comparison",
+        "history",
+        "review",
+        "transparency",
+        "snapshot",
+        "evaluation"
+      ],
+      "properties": {
+        "comparison": {
+          "type": "string",
+          "minLength": 1
+        },
+        "history": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transparency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshot": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evaluation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
     },
     "facts": {
       "type": "array",
