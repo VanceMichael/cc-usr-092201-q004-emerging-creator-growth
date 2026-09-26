@@ -28,14 +28,25 @@
       "minItems": 3,
       "items": {
         "type": "string"
-      }
+      },
+      "allOf": [
+        { "contains": { "const": "统计窗口" } },
+        { "contains": { "const": "领域基准" } },
+        { "contains": { "const": "数据快照" } },
+        { "contains": { "const": "申诉记录" } }
+      ]
     },
     "workflow_states": {
       "type": "array",
       "minItems": 3,
       "items": {
         "type": "string"
-      }
+      },
+      "allOf": [
+        { "contains": { "const": "观察中" } },
+        { "contains": { "const": "待复核" } },
+        { "contains": { "const": "申诉中" } }
+      ]
     },
     "facts": {
       "type": "array",
